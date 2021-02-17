@@ -11,17 +11,7 @@ class CustomField extends Model
 	
 	use SoftDeletes;
 	
-    protected $guarded = ['id'];
-
-    protected $fillable = [
-        'type', 
-        'title', 
-        'description', 
-        'answers', 
-        'required', 
-        'default_value', 
-        'order',
-    ];
+    protected $guarded = [];
 
     protected $casts = [
         'answers' => 'array',

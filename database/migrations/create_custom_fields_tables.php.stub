@@ -8,8 +8,21 @@ class CreateCustomFieldsTables extends Migration
 {
     public function up()
     {
+        
+        $fields = config('custom-fields.key_columns', 'custom_fields');
+
         Schema::create(config('custom-fields.tables.fields', 'custom_fields'), function (Blueprint $table) {
             $table->increments('id');
+            if (sizeof($fields)) {
+                foreach ($fields as $field) {
+                    if ($field['constrained'] && $field['type'] === 'foreignId') {
+                        $table->{$field['type']}($field['name'])->constrained();
+                    } else {
+                        $table->{$field['type']}($field['name']);
+                    }
+
+                };
+            };
             $table->unsignedInteger('model_id');
             $table->string('model_type');
             $table->string('type');
@@ -21,6 +34,22 @@ class CreateCustomFieldsTables extends Migration
             $table->string('order');
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
+        });
+
+        Schema::table(config('custom-fields.tables.fields', 'custom_fields'), function (Blueprint $table) use ($fields) {
+            if (sizeof($fields)) {
+                foreach ($fields as $field) {
+                    if ($field['size']) {
+                        $table->{$field['type']}($field['name'], $field['size'])->change();
+                    }
+                    if ($field['nullable'] && !$field['constrained']) {
+                        $table->{$field['type']}($field['name'])->nullable()->change();
+                    }
+                    if ($field['default']) {
+                        $table->{$field['type']}($field['name'])->default($field['default'])->change();
+                    }
+                };
+            };
         });
 
         Schema::create(config('custom-fields.tables.field_responses', 'custom_field_responses'), function (Blueprint $table) {
