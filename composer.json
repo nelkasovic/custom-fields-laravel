@@ -11,12 +11,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Givebutter\\LaravelCustomFields\\": "src/"
+      "Wimando\\LaravelCustomFields\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Givebutter\\Tests\\": "tests/"
+      "Wimando\\Tests\\": "tests/"
     }
   },
   "license": "MIT",
@@ -40,7 +40,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Givebutter\\LaravelCustomFields\\LaravelCustomFieldsServiceProvider"
+        "Wimando\\LaravelCustomFields\\LaravelCustomFieldsServiceProvider"
       ]
     }
   }

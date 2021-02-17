@@ -1,10 +1,10 @@
 <?php
 
-namespace Givebutter\Tests\Feature;
+namespace Wimando\Tests\Feature;
 
-use Givebutter\LaravelCustomFields\Models\CustomField;
-use Givebutter\Tests\Support\Survey;
-use Givebutter\Tests\TestCase;
+use Wimando\LaravelCustomFields\Models\CustomField;
+use Wimando\Tests\Support\Survey;
+use Wimando\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class HasCustomFieldsTest extends TestCase

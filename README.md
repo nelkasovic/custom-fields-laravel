@@ -13,7 +13,7 @@ composer require wimando/custom-fields-laravel
 
 Publish the migration:
 ```bash
-php artisan vendor:publish --provider="Givebutter\LaravelCustomFields\LaravelCustomFieldsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Wimando\LaravelCustomFields\LaravelCustomFieldsServiceProvider" --tag="migrations"
 ```
 
 Run the migration:
@@ -34,7 +34,7 @@ To add basic custom field support, simply add the `HasCusomFields` trait at the 
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Givebutter\LaravelCustomFields\Traits\HasCusomFields;
+use Wimando\LaravelCustomFields\Traits\HasCusomFields;
 
 class Survey extends Model
 {
@@ -50,7 +50,7 @@ Next, we add support to store custom field responses. We'll simply pull in the `
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Givebutter\LaravelCustomFields\Traits\HasCusomFieldResponses;
+use Wimando\LaravelCustomFields\Traits\HasCusomFieldResponses;
 
 class SurveyResponse extends Model
 {
@@ -272,7 +272,7 @@ $survey->customFields()->get(); // Returned in ascending order.
 
 To publish the configuration file, run the following command:
 ```bash
-php artisan vendor:publish --provider="Givebutter\LaravelCustomFields\LaravelCustomFieldsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Wimando\LaravelCustomFields\LaravelCustomFieldsServiceProvider" --tag="config"
 ```
 
 The configuration file should now be published in `config/custom-fields.php`. The available options and their usage are explained inside the published file.

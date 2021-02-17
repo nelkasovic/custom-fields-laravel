@@ -1,12 +1,12 @@
 <?php
 
-namespace Givebutter\Tests\Feature;
+namespace Wimando\Tests\Feature;
 
-use Givebutter\LaravelCustomFields\Exceptions\FieldDoesNotBelongToModelException;
-use Givebutter\LaravelCustomFields\Exceptions\WrongNumberOfFieldsForOrderingException;
-use Givebutter\LaravelCustomFields\Models\CustomField;
-use Givebutter\Tests\Support\Survey;
-use Givebutter\Tests\TestCase;
+use Wimando\LaravelCustomFields\Exceptions\FieldDoesNotBelongToModelException;
+use Wimando\LaravelCustomFields\Exceptions\WrongNumberOfFieldsForOrderingException;
+use Wimando\LaravelCustomFields\Models\CustomField;
+use Wimando\Tests\Support\Survey;
+use Wimando\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class OrderingTest extends TestCase
@@ -102,7 +102,7 @@ class OrderingTest extends TestCase
         ]);
 
         $this->expectException(FieldDoesNotBelongToModelException::class);
-        $this->expectExceptionMessage('Field 1 does not belong to Givebutter\Tests\Support\Survey with id 2');
+        $this->expectExceptionMessage('Field 1 does not belong to Wimando\Tests\Support\Survey with id 2');
 
         $survey2->order([1, 2]);
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Givebutter\Tests;
+namespace Wimando\Tests;
 
-use Givebutter\LaravelCustomFields\LaravelCustomFieldsServiceProvider;
-use Givebutter\Tests\Support\Survey;
+use Wimando\LaravelCustomFields\LaravelCustomFieldsServiceProvider;
+use Wimando\Tests\Support\Survey;
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 

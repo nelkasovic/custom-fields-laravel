@@ -1,8 +1,8 @@
 <?php 
 
-namespace Givebutter\LaravelCustomFields\Validators;
+namespace Wimando\LaravelCustomFields\Validators;
 
-use Givebutter\LaravelCustomFields\Models\CustomField;
+use Wimando\LaravelCustomFields\Models\CustomField;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Validator;
 

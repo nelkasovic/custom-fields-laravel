@@ -1,8 +1,8 @@
 <?php
 
-namespace Givebutter\Tests\Support;
+namespace Wimando\Tests\Support;
 
-use Givebutter\LaravelCustomFields\Traits\HasCustomFields;
+use Wimando\LaravelCustomFields\Traits\HasCustomFields;
 use Illuminate\Database\Eloquent\Model;
 
 class Survey extends Model

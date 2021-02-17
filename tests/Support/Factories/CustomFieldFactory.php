@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator;
-use Givebutter\LaravelCustomFields\Models\CustomField;
+use Wimando\LaravelCustomFields\Models\CustomField;
 
 $factory->define(CustomField::class, function (Generator $faker) {
     return [

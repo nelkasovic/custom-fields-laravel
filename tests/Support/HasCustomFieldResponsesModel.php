@@ -1,8 +1,8 @@
 <?php
 
-namespace Givebutter\Tests\Support;
+namespace Wimando\Tests\Support;
 
-use Givebutter\LaravelCustomFields\Traits\HasCustomFieldResponses;
+use Wimando\LaravelCustomFields\Traits\HasCustomFieldResponses;
 use Illuminate\Database\Eloquent\Model;
 
 class HasCustomFieldResponsesModel extends Model

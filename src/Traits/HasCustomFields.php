@@ -1,11 +1,11 @@
 <?php
 
-namespace Givebutter\LaravelCustomFields\Traits;
+namespace Wimando\LaravelCustomFields\Traits;
 
-use Givebutter\LaravelCustomFields\Exceptions\FieldDoesNotBelongToModelException;
-use Givebutter\LaravelCustomFields\Exceptions\WrongNumberOfFieldsForOrderingException;
-use Givebutter\LaravelCustomFields\Models\CustomField;
-use Givebutter\LaravelCustomFields\Validators\CustomFieldValidator;
+use Wimando\LaravelCustomFields\Exceptions\FieldDoesNotBelongToModelException;
+use Wimando\LaravelCustomFields\Exceptions\WrongNumberOfFieldsForOrderingException;
+use Wimando\LaravelCustomFields\Models\CustomField;
+use Wimando\LaravelCustomFields\Validators\CustomFieldValidator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

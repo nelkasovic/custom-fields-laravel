@@ -1,6 +1,6 @@
 <?php
 
-namespace Givebutter\LaravelCustomFields;
+namespace Wimando\LaravelCustomFields;
 
 use Illuminate\Support\ServiceProvider;
 

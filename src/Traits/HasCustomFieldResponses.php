@@ -1,9 +1,9 @@
 <?php
 
-namespace Givebutter\LaravelCustomFields\Traits;
+namespace Wimando\LaravelCustomFields\Traits;
 
-use Givebutter\LaravelCustomFields\Models\CustomField;
-use Givebutter\LaravelCustomFields\Models\CustomFieldResponse;
+use Wimando\LaravelCustomFields\Models\CustomField;
+use Wimando\LaravelCustomFields\Models\CustomFieldResponse;
 
 trait HasCustomFieldResponses
 {

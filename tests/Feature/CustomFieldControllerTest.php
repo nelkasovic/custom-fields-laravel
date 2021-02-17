@@ -1,11 +1,11 @@
 <?php
 
-namespace Givebutter\Tests\Feature;
+namespace Wimando\Tests\Feature;
 
-use Givebutter\LaravelCustomFields\Models\CustomField;
-use Givebutter\Tests\Support\Survey;
-use Givebutter\Tests\Support\SurveyResponse;
-use Givebutter\Tests\TestCase;
+use Wimando\LaravelCustomFields\Models\CustomField;
+use Wimando\Tests\Support\Survey;
+use Wimando\Tests\Support\SurveyResponse;
+use Wimando\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
