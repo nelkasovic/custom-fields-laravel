@@ -1,5 +1,5 @@
 {
-  "name": "givebutter/laravel-custom-fields",
+  "name": "wimando/custom-fields-laravel",
   "description": "Laravel Custom Fields is a package that allows you to add custom fields to any Laravel model and store responses to those fields on any Laravel model.",
   "type": "library",
   "require": {
@@ -22,8 +22,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Daniel Coulbourne",
-      "email": "daniel@tighten.co"
+      "name": "Nermin Elkasovic",
+      "email": "nermin@wimando.ch"
     }
   ],
   "scripts": {
