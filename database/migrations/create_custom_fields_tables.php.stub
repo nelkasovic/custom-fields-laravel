@@ -11,7 +11,7 @@ class CreateCustomFieldsTables extends Migration
         
         $fields = config('custom-fields.key_columns', 'custom_fields');
 
-        Schema::create(config('custom-fields.tables.fields', 'custom_fields'), function (Blueprint $table) {
+        Schema::create(config('custom-fields.tables.fields', 'custom_fields'), function (Blueprint $table) use ($fields) {
             $table->increments('id');
             if (sizeof($fields)) {
                 foreach ($fields as $field) {
