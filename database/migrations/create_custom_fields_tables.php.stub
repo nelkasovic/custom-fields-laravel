@@ -23,7 +23,7 @@ class CreateCustomFieldsTables extends Migration
 
                 };
             };
-            $table->unsignedInteger('model_id');
+            $table->unsignedInteger('model_id')->nullable();
             $table->string('model_type');
             $table->string('type');
             $table->boolean('required')->default(false);
