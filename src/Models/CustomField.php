@@ -80,7 +80,7 @@ class CustomField extends Model
                 $lastFieldOnCurrentModel = $field->model->customFields()->orderBy('order', 'desc')->first();
             }
             
-            $field->order = ($lastFieldOnCurrentModel ? $lastFieldOnCurrentModel->order : 0) + 1;
+            $field->order = (isset($lastFieldOnCurrentModel) ? $lastFieldOnCurrentModel->order : 0) + 1;
         });
     }
 }
